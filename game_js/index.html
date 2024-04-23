@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GAME</title>
+</head>
+<body>
+    <div class="container">
+        <div class="changeHero">
+            <span class="change">ВЫБЕРИТЕ ГЕРОЯ:</span>
+            <button class="arthas btn" onclick="changeArthas()">АРТАС</button>
+            <button class="trall btn" onclick="changeTrall()">ТРАЛЛ</button>
+        </div>
+        <button class="door btn">Войти в Подземелье!</button>
+        <div class="dung">
+            <label for="creepHp" id="creep_name"></label>
+            <span class="race"></span>
+            <span class="weapon"></span>
+            <progress id="creepHp" max="100" value="70"></progress>
+            <button class="hero_attack btn" onclick="monster.getDamage(yourHero)">Атаковать!</button>
+            <button class="leave btn" onclick="leaveDungeon()">Убежать!</button>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

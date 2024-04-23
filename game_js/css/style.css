@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --red: RGB(107, 41, 55);
+    --crem: RGB(184, 163, 141);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--red);
+    display: grid;
+    place-items: center;
+}
+.container {
+    width: 50%;
+    height: 50%;
+    background-color: var(--crem);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dung{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    gap: 15px;
+}
+label{
+    color: var(--red);
+    font-size: 30px;
+}
+progress {
+    color: var(--red);
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.btn {
+    padding: 10px 30px;
+    background-color: var(--red);
+    border: none;
+    color: var(--crem);
+    font-weight: 400;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: var(--crem);
+    color: var(--red);
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+    user-select: none;
+}
+.door{
+    display: none;
+}
+.progress_bar{
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    background-color: var(--red);
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.progress{
+    padding: 10px;
+    background-color: var(--crem);
+    height: 30px;
+    width: 70%;
+    border-radius: 20px;
+}
+.changeHero{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.change{
+    color: var(--red);
+    font-weight: 600;
+    font-size: 30px;
+}
+.race, .weapon{
+    color: var(--red);
+    font-size: 20px;
+}
